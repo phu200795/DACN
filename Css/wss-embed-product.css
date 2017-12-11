@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.wss-embed-products > * {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wss-embed-products .list-product-embed {
+    list-style: none;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+.wss-embed-products .list-product-embed .item {
+    margin: 0;
+    width: 181px;
+    float: none;
+    text-align: left;
+    display: inline-block;
+    position: relative;
+}
+.wss-embed-products .list-product-embed .item .img-wrap{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 214px;
+}
+.wss-embed-products .list-product-embed .item .img-wrap img{
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+.wss-embed-products .list-product-embed .item a {
+    display: inline;
+}
+.wss-embed-products .list-product-embed .item button {
+    opacity: 0;
+    left: 0px;
+    top: 200px;
+    position: absolute;
+    width: 100%;
+}
+
+.wss-embed-products .list-product-embed .item button span.go-direct::before {
+    content: "Tới nơi bán";
+}
+
+.wss-embed-products .list-product-embed .item button span.go-compare::before {
+    content: "So sánh giá";
+}
+
+.wss-embed-products .list-product-embed .item button span.go-compare > strong,.wss-embed-products .list-product-embed .item button span.go-direct > strong {
+    display: none;
+}
+
+.wss-embed-products .list-product-embed .item:hover button {
+    opacity: 1;
+}
+
+.btn-orange, .btn-compare, .btn-go-store {
+    padding: 0 22px;
+    height: 30px;
+    border: none;
+    background: #fd6531;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+
+.wss-embed-products .list-product-embed .item .title {
+    font-size: 13px;
+    line-height: 18px;
+    padding: 4px 0;
+    color: #333;
+    margin-top: 0;
+    height: 38px;
+    margin: 15px 0 5px;
+    overflow: hidden;
+}
+.wss-embed-products .list-product-embed .item .title a {
+    font-size: 13px;
+    color: #333;
+    text-decoration: none;
+}
+.wss-embed-products a[target=_blank] {
+    margin-right: 0;
+  }
+.wss-embed-products .list-product-embed .item .price {
+    color: #FE0C0C;
+    font-size: 18px;
+    line-height: 25px;
+}
+.wss-embed-products .list-product-embed .item .quantity {
+    font-size: 13px;
+    padding: 4px 0 2px 0;
+    border-top: solid 1px #e7e7e7;
+    border-bottom: solid 1px #e7e7e7;
+    overflow: hidden;
+    color: #333;
+}
+.wss-embed-products .list-product-embed .item .quantity .provins {
+    height: 32px;
+    overflow: hidden;
+    width: 55%;
+    float: left;
+    display: inline-flex;
+}
+.wss-embed-products .list-product-embed .item .quantity p {
+    float: left;
+    margin: 0;
+    padding: 0;
+    line-height: 32px;
+}
+.wss-embed-products .list-product-embed .item .quantity .provins .provins-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 15px;
+    margin: auto 0;
+    vertical-align: middle;
+    color: #333;
+}
+.wss-embed-products .list-product-embed .item .quantity .img-merchant-wrap {
+    float: right;
+    position: relative;
+    width: 40%;
+    height: 32px;
+}
+
+.wss-embed-products .list-product-embed .item .quantity .img-merchant-wrap img {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.wss-embed-products .list-type-grid .btn-viewmore {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .wss-embed-products .list-product-embed .item {
+        width: 49%;
+        padding: 10px;
+    }
+
+    .wss-embed-products .list-product-embed .item button {
+	    opacity: 1;
+	    top: 170px;
+	    right: 0;
+	    left: 0;
+	    margin-left: auto;
+	    margin-right: auto;
+	    width: 90%;
+	    text-shadow: none;
+    }
+
+    .wss-embed-products .list-product-embed .item:nth-child(n+3) {
+        display: none;
+    }
+
+    .wss-embed-products .list-type-grid .btn-viewmore {
+	    background: #0bf;
+        border: 0;
+        margin: 0 auto;
+        display: block;
+        border-radius: 2px;
+        padding: 3px 10px;
+        color: #fff;
+    }
+}

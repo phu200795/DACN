@@ -1,0 +1,1 @@
+function loadImageError(n){n.src="/Content/images/no-image.jpg";n.onerror=null}function loadLogoImageError(n){n.src="/Content/images/no-logo.jpg";n.onerror=null}function multiline(n){return n.toString().replace(/^[^\/]+\/\*!@preserve?/,"").replace(/\*\/[^\/]+$/,"").trim()}
